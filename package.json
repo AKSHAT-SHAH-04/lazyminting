@@ -1,0 +1,57 @@
+{
+  "name": "lazymint_sc",
+  "version": "1.0.0",
+  "description": "Lazy minting smart contract using hardhat",
+  "main": "server.js",
+  "scripts": {
+    "solhint": "./node_modules/.bin/solhint -f table contracts/**/*.sol",
+    "prettier:solidity": "./node_modules/.bin/prettier --write contracts/**/*.sol",
+    "start dev": "nodemon ./src/api/server.js",
+    "start": "node ./src/api/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhamkr95/lazy_minting_sc.git"
+  },
+  "author": "Shubham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubhamkr95/lazy_minting_sc/issues"
+  },
+  "homepage": "https://github.com/shubhamkr95/lazy_minting_sc#readme",
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.6.0",
+    "body-parser": "^1.20.0",
+    "cool-ascii-faces": "^1.3.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.6.5",
+    "express": "^4.18.1",
+    "hardhat": "^2.9.3",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.3.3",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "2.25",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "ethereum-waffle": "^3.4.4",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2",
+    "solhint": "^3.3.7",
+    "solhint-plugin-prettier": "^0.0.5",
+    "solidity-coverage": "^0.7.21"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
